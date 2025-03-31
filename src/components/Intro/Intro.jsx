@@ -11,7 +11,7 @@ const Intro = () => {
                 introClass[0].style.top = '-100vh'; // Access the first element
 
             }
-        }, 1500);
+        }, 1400);
         const logoElementsTimer = setTimeout(() => {
             // Remove 'appear' class and add 'fade' class to each logo element
             Array.from(logoElements).forEach((element, index) => {
@@ -21,7 +21,7 @@ const Intro = () => {
                     element.classList.add("fade");
                 }, 200 * deplay);
             });
-        }, 1000);
+        }, 400);
 
         return () => {
             clearTimeout(introMainTimer);

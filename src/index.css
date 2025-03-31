@@ -2,6 +2,7 @@
   color: #fff;
   --bg-color: rgb(12, 12, 12);
   --header-bg-color: rgb(31, 31, 31);
+  --dark-icon-bg-color: #fff;
   transition: 0.3s ease-in-out;
 }
 
@@ -9,6 +10,7 @@
   color: #000;
   --bg-color: #fff;
   --header-bg-color: #fff;
+  --dark-icon-bg-color: #000;
   transition: 0.3s ease-in-out;
 }
 
