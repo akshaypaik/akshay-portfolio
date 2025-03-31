@@ -48,6 +48,7 @@ h1 {
 .home-socials a:hover rect,
 .home-socials a:hover circle {
     fill: #cf1b1b;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
