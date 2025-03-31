@@ -15,10 +15,10 @@ const Header = () => {
     }
 
     return (
-        <div className='header-container' onClick={handleToggleDarkMode}>
+        <div className='header-container'>
             <img src={manBeardImg} alt='man-with-beard' className={`${darkMode ? 'dark' : ''}`} />
             <NavItems />
-            <div className='dark-mode-icon'>
+            <div className='dark-mode-icon' onClick={handleToggleDarkMode}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"

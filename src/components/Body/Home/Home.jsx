@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { useSelector } from 'react-redux';
-import myImage from '../../../assets/images/me.jpg';
+import myImage from '../../../assets/images/me-home-shape-png.png';
 
 const Home = () => {
 

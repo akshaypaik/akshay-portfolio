@@ -5,8 +5,8 @@
 }
 
 .home-container img {
-    height: 240px;
-    border-radius: 50%;
+    height: 420px;
+    /* border-radius: 50%; */
 }
 
 .home-container a {
