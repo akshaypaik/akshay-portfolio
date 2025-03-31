@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { useSelector } from 'react-redux';
 import myImage from '../../../assets/images/me-home-shape-png.png';
@@ -7,6 +7,30 @@ const Home = () => {
 
     const darkMode = useSelector((store) => store.app.darkMode);
     const personalPortfolio = useSelector((store) => store.app.personalPortfolio);
+
+    useEffect(() => {
+        const typewriter = new Typewriter(document.querySelector('.autoWrite'), {
+            loop: true,
+        });
+    
+        typewriter
+            .typeString('React.js Developer')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Angular Developer')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Youtuber')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('JavaScript Developer')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Who loves to code')
+            .pauseFor(2000)
+            .deleteAll()
+            .start();
+    }, []);
 
     return (
         <>
