@@ -23,21 +23,31 @@ const NavItems = () => {
     return (
         <div className='nav-items'>
             <ul>
-                <li className={`${currentMenu === "home" ? 'selected' : ''}`}>
-                    <a href='#home' onClick={(e) => handleScroll(e, '#home')}>Home</a>
-                </li>
-                <li className={`${currentMenu === "about" ? 'selected' : ''}`}>
-                    <a href='#about' onClick={(e) => handleScroll(e, '#about')}>About</a>
-                </li>
-                <li className={`${currentMenu === "skills" ? 'selected' : ''}`}>
-                    <a href='#skills' onClick={(e) => handleScroll(e, '#skills')}>Skills</a>
-                </li>
-                <li className={`${currentMenu === "projects" ? 'selected' : ''}`}>
-                    <a href='#projects' onClick={(e) => handleScroll(e, '#projects')}>Projects</a>
-                </li>
-                <li className={`${currentMenu === "contact" ? 'selected' : ''}`}>
-                    <a href='#contact' onClick={(e) => handleScroll(e, '#contact')}>Contact</a>
-                </li>
+                <a href='#home' onClick={(e) => handleScroll(e, '#home')}>
+                    <li className={`${currentMenu === "home" ? 'selected' : ''}`}>
+                        Home
+                    </li>
+                </a>
+                <a href='#about' onClick={(e) => handleScroll(e, '#about')}>
+                    <li className={`${currentMenu === "about" ? 'selected' : ''}`}>
+                        About
+                    </li>
+                </a>
+                <a href='#skills' onClick={(e) => handleScroll(e, '#skills')}>
+                    <li className={`${currentMenu === "skills" ? 'selected' : ''}`}>
+                        Skills
+                    </li>
+                </a>
+                <a href='#projects' onClick={(e) => handleScroll(e, '#projects')}>
+                    <li className={`${currentMenu === "projects" ? 'selected' : ''}`}>
+                        Projects
+                    </li>
+                </a>
+                <a href='#contact' onClick={(e) => handleScroll(e, '#contact')}>
+                    <li className={`${currentMenu === "contact" ? 'selected' : ''}`}>
+                        Contact
+                    </li>
+                </a>
             </ul>
         </div>
     )
