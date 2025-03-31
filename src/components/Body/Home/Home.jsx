@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { useSelector } from 'react-redux';
+import myImage from '../../../assets/images/me.jpg';
 
 const Home = () => {
 
@@ -17,7 +18,12 @@ const Home = () => {
                     <div className='autoWrite'>
 
                     </div>
+                    <div className='download-cv-btn'>
+                        <a href='https://drive.google.com/file/d/1eR7DlTYhgWCfCA6NLc_qh3dXaxXiSqCI/view?usp=drive_link'
+                            target='_blank'>Download CV</a>
+                    </div>
                 </h1>
+                <img src={myImage} alt='akshay-photo' />
             </div>
             <div className='home-socials'>
                 <a href="https://www.linkedin.com/in/akshay-pai" target="_blank">
