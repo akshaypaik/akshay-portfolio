@@ -1,0 +1,16 @@
+.footer-container{
+    height: 240px;
+    background-color: #14191b;
+    margin-top: 4rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.footer-name{
+    font-size: 1.4rem;
+
+}

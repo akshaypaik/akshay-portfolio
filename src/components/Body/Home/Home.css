@@ -2,6 +2,7 @@
     align-self: center;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .home-container img {
@@ -30,6 +31,8 @@
 .home-socials {
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
+    z-index: 1;
 }
 
 .profile-name {

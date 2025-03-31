@@ -3,6 +3,7 @@
   --bg-color: rgb(12, 12, 12);
   --header-bg-color: rgb(31, 31, 31);
   --dark-icon-bg-color: #fff;
+  --input-bg-color: rgb(208, 208, 208);
   transition: 0.3s ease-in-out;
 }
 
@@ -11,13 +12,13 @@
   --bg-color: #fff;
   --header-bg-color: #fff;
   --dark-icon-bg-color: #000;
+  --input-bg-color: rgb(208, 208, 208);
   transition: 0.3s ease-in-out;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-color);
   color: white;
   font-family: "Roboto Slab", serif;
 }
