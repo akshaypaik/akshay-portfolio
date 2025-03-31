@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 .contact-form input{
@@ -11,7 +12,7 @@
     outline: none;
     border: none;
     font-weight: 600;
-    width: 480px;
+    width: 160px;
     border-radius: 8px;
     background-color: var(--input-bg-color);
 }
@@ -21,7 +22,7 @@
     outline: none;
     border: none;
     font-weight: 600;
-    width: 480px;
+    width: 160px;
     height: 120px;
     border-radius: 8px;
     color: #000;
@@ -41,4 +42,10 @@
 
 .contact-form button:hover{
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    .contact-form input,.contact-form textarea {
+        width: 480px;
+    }
 }
