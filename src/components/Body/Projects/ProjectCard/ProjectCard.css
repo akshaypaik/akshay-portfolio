@@ -1,0 +1,25 @@
+.project-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    gap: 24px;
+    cursor: pointer;
+}
+
+.project-card-container img {
+    width: 360px;
+    height: 180px;
+}
+
+.project-card-container a:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.project-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
