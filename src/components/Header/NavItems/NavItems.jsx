@@ -12,7 +12,6 @@ const NavItems = () => {
             targetElement.scrollIntoView({ behavior: 'smooth' });
         }
         const menuSelected = targetId.slice(1);
-        console.log("menuSelected: ", menuSelected);
         onMenuSelect(menuSelected);
     };
 

@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import About from './About/About';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
+import Contact from './Contact/Contact';
 
 const Body = () => {
     return (
@@ -19,6 +20,9 @@ const Body = () => {
             </section>
             <section id="projects" className='projects-section'>
                 <Projects />
+            </section>
+            <section id="contact" className='contact-section'>
+                <Contact />
             </section>
         </div>
     )
