@@ -2,11 +2,21 @@ import React from 'react';
 import './Header.css';
 import manBeardImg from '../../assets/images/man-with-beard.png';
 import NavItems from './NavItems/NavItems';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleDarkMode } from '../../utils/ReduxStore/appSlice';
 
 const Header = () => {
+
+    const dispatch = useDispatch();
+    const darkMode = useSelector((store) => store.app.darkMode);
+
+    const handleToggleDarkMode = () => {
+        dispatch(toggleDarkMode());
+    }
+
     return (
-        <div className='header-container'>
-            <img src={manBeardImg} alt='man-with-beard' />
+        <div className='header-container' onClick={handleToggleDarkMode}>
+            <img src={manBeardImg} alt='man-with-beard' className={`${darkMode ? 'dark' : ''}`} />
             <NavItems />
             <div className='dark-mode-icon'>
                 <svg
@@ -14,8 +24,8 @@ const Header = () => {
                     viewBox="0 0 24 24"
                     width="100"
                     height="100"
-                    fill="none"
-                    stroke="currentColor"
+                    fill={`${darkMode ? 'black' : 'white'}`}
+                    stroke={`${darkMode ? 'white' : 'black'}`}
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round">

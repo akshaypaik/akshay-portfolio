@@ -1,0 +1,39 @@
+.home-container {
+    align-self: center;
+}
+
+.home-socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    color: #cf1b1b;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.home-socials svg {
+    height: 36px;
+}
+
+.home-socials a:hover svg path,
+.home-socials a:hover rect,
+.home-socials a:hover circle {
+    fill: #cf1b1b;
+}
+
+@media screen and (min-width: 768px) {
+    .home-container {
+        align-self: flex-end;
+    }
+
+    .home-socials {
+        align-self: flex-end;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        gap: 12px;
+    }
+}
