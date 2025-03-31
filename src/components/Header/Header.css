@@ -1,0 +1,23 @@
+.header-container{
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--z-fixed);
+    box-shadow: rgba(146, 161, 176, 0.15) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+
+.header-container img{
+    height: 60px;
+    filter: invert(87%) sepia(55%) saturate(6910%) hue-rotate(180deg) brightness(106%) contrast(148%);
+    margin-left: 24px;
+    margin-right: auto;
+}
+
+.dark-mode-icon svg{
+    height: 48px;
+}

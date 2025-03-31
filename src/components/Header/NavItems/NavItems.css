@@ -1,0 +1,21 @@
+.nav-items ul{
+    display: flex;
+    gap: 36px;
+    margin-right: 36px;
+}
+
+.nav-items ul li{
+    list-style-type: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-items ul li:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 12px;
+}
+
+.nav-items ul li.selected{
+    border-bottom: 2px solid red;
+    padding-bottom: 12px;
+}

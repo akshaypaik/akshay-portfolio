@@ -1,0 +1,38 @@
+.intro {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    z-index: 101;
+    transition: 0.7s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    font-size: 2.5rem;
+}
+
+.logo.appear {
+    bottom: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+}

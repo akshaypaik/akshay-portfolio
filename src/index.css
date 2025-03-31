@@ -1,0 +1,15 @@
+:root {
+  color: #fff;
+}
+
+.light-mode {
+  color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
