@@ -14,7 +14,8 @@
 }
 
 .about-section{
-    margin-top: 6rem;
+    margin-top: 8rem;
+    scroll-margin-top: 80px;
 }
 
 .skills-section, .projects-section, .contact-section {
@@ -47,5 +48,6 @@
         padding-top: 4rem;
         padding-bottom: 3rem;
         margin-top: 0;
+        scroll-margin-top: 0;
     }
 }
