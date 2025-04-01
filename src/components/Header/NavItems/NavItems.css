@@ -1,25 +1,38 @@
-.nav-items ul{
+.nav-items ul {
     display: flex;
-    gap: 36px;
-    margin-right: 36px;
+    gap: 12px;
+    margin-right: 12px;
+    padding-left: 0;
 }
 
-.nav-items ul li{
+.nav-items ul li {
     list-style-type: none;
     font-weight: 600;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
-.nav-items ul li:hover{
+.nav-items ul li:hover {
     border-bottom: 2px solid red;
     padding-bottom: 12px;
 }
 
-.nav-items ul li.selected{
+.nav-items ul li.selected {
     border-bottom: 2px solid red;
     padding-bottom: 12px;
 }
 
-a{
+a {
     all: unset;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-items ul {
+        gap: 36px;
+        margin-right: 36px;
+    }
+
+    .nav-items ul li {
+        font-size: 1rem;
+    }
 }

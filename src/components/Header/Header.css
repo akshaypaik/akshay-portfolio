@@ -13,7 +13,6 @@
 
 .header-container img {
     height: 60px;
-    margin-left: 12rem;
     margin-right: auto;
 }
 
@@ -37,4 +36,10 @@
     left: -24px;
     height: 48px;
     z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container img {
+        margin-left: 12rem;
+    }
 }
