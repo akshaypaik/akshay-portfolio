@@ -55,7 +55,7 @@ const Skills = () => {
                             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Siemens_AG_logo.svg"
                                 alt="siemens" />
                         </li>
-                        <li>
+                        <li style={{ paddingBottom: '14px' }}>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg"
                                 alt="accenture" />
                         </li>
