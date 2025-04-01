@@ -17,8 +17,9 @@
     margin-top: 6rem;
 }
 
-.skills-section {
+.skills-section, .projects-section, .contact-section {
     margin-top: 4rem;
+    scroll-margin-top: 80px;
 }
 
 .section-title {
