@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Home.css';
 import { useSelector } from 'react-redux';
 import myImage from '../../../assets/images/me-home-shape-png.png';
+import { RESUME_LINK } from '../../../utils/constants/constants';
 
 const Home = () => {
 
@@ -43,7 +44,7 @@ const Home = () => {
 
                     </div>
                     <div className='download-cv-btn'>
-                        <a href='https://drive.google.com/file/d/1eR7DlTYhgWCfCA6NLc_qh3dXaxXiSqCI/view?usp=drive_link'
+                        <a href={RESUME_LINK}
                             target='_blank'>Download CV</a>
                     </div>
                 </h1>
