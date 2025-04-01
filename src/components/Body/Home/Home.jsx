@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import { useSelector } from 'react-redux';
-import myImage from '../../../assets/images/me-home-shape-png.png';
 import { RESUME_LINK } from '../../../utils/constants/constants';
 
 const Home = () => {
@@ -48,7 +47,7 @@ const Home = () => {
                             target='_blank'>Download CV</a>
                     </div>
                 </h1>
-                <img src={myImage} alt='akshay-photo' />
+                <div className="polygon"></div>
             </div>
             <div className='home-socials'>
                 <a href="https://www.linkedin.com/in/akshay-pai" target="_blank">
