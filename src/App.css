@@ -4,4 +4,17 @@
   max-height: 100%;
   width: 100%;
   z-index: 1;
+  /* For Firefox */
+  scrollbar-color: #cf1b1b #f0f0f0; /* Scrollbar thumb and track colors */
+  scrollbar-width: thin; /* Optional: makes the scrollbar thinner */
+}
+
+/* For Chrome, Edge, and Safari */
+.app-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.app-container::-webkit-scrollbar-thumb {
+  background-color: #cf1b1b; /* Scrollbar thumb color */
+  border-radius: 4px; /* Optional: rounded corners */
 }

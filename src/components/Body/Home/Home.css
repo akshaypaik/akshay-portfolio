@@ -28,7 +28,9 @@
 }
 
 .home-container a:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.30);
+    background-color: #fff;
+    color: #000;
 }
 
 .home-socials {
@@ -43,6 +45,15 @@
 
 h1 {
     font-size: 3.5rem;
+}
+
+.home-socials:hover {
+    cursor: pointer;
+}
+
+.home-socials a:hover{
+    transform: scale(1.2, 1.2);
+    transition: 0.3s ease-in-out;
 }
 
 .home-socials svg {
@@ -68,6 +79,7 @@ h1 {
         flex-direction: row;
         gap: 12px;
     }
+
     .home-container img {
         height: 420px;
     }
