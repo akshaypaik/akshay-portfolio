@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
@@ -12,18 +13,14 @@ const Contact = () => {
     const handleContactFormSubmission = (e) => {
         e.preventDefault();
 
+        toast.promise(
         emailjs.sendForm('service_edepv3v', 'template_h1pt6ke', form.current, {
             publicKey: 'jKM3xD9KvUXSIomRR',
-        })
-            .then(
-                () => {
-                    console.log('SUCCESS! Email Sent Successfully');
-                },
-                (error) => {
-                    console.log('Email Sending FAILED...', error.text);
-                },
-            );
-
+        }),{
+            loading: 'Receiving your message!🚀',
+            success: () => `Received your message. Thank you!🙏`,
+            error: () => `Something went wrong! we did not receive your message. Please try again later.☹️`,
+        });
         resetForm();
     }
 
@@ -35,6 +32,7 @@ const Contact = () => {
 
     return (
         <div>
+            <Toaster/>
             <h1 className='section-title'>Contact</h1>
             <form ref={form} className='contact-form' onSubmit={(e) => handleContactFormSubmission(e)}>
                 <input type='text' name="user_name" placeholder='Name' required ref={name} />
