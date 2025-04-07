@@ -1,6 +1,19 @@
-.projects-container{
-    display: flex;
-    justify-content: center;
-    gap: 72px;
-    flex-wrap: wrap;
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 3;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+@media screen and (max-width:1200px){
+    .projects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:768px){
+    .projects-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
