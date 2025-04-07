@@ -9,15 +9,18 @@
 .home-container a {
     background-color: #cf1b1b;
     color: #fff;
-    padding: 0.75rem 2.5rem;
     font-weight: 600;
     border-radius: 0.5rem;
     outline: none;
     border: none;
-    padding: 18px 40px;
+    padding: 18px 18px;
     cursor: pointer;
     font-size: 1rem;
     text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    max-width: 160px;
+    margin-top: 4rem;
 }
 
 .home-container a:hover {
@@ -26,10 +29,29 @@
     color: #000;
 }
 
+.home-container a:hover svg{
+    animation: bounce 1s linear infinite;
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      transition: 0.3s ease-in-out;
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      transition: 0.3s ease-in-out;
+    }
+  }
+
 .home-socials {
     display: flex;
     margin-bottom: 4rem;
     z-index: 1;
+    gap: 24px;
 }
 
 .profile-name {
@@ -84,7 +106,7 @@ h1 {
         align-self: flex-end;
         padding-bottom: 2.5rem;
         flex-direction: row;
-        gap: 12px;
+        gap: 24px;
     }
 
     .polygon {
