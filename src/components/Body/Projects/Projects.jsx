@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 import videoStreamingPlatFormImage from '../../../assets/images/video-streaming-platform.png';
 import netflixProjectImage from '../../../assets/images/netflix-project.png';
 import swiggyProjectImage from '../../../assets/images/swiggy-project.png';
+import { motion } from 'framer-motion';
 
 const projectDetails = [
     {
@@ -34,12 +35,22 @@ const projectDetails = [
 
 const Projects = () => {
     return (
-        <div style={{ margin: '0 auto', maxWidth: '1200px' }}>
-            <h1 className='section-title'>Projects</h1>
-            <div className='projects-container'>
-                {projectDetails.map((project) => <ProjectCard key={project.projectURL} info={project} />)}
+        <motion.div
+            className="glass-card bg-translucent-30 p-8 rounded-xl border border-primary 
+                            hover:bg-translucent-40 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 2 * 0.1 }}
+            viewport={{ once: true }}
+        >
+            <div style={{ margin: '0 auto', maxWidth: '1200px' }}>
+                <h1 className='section-title'>Projects</h1>
+                <div className='projects-container'>
+                    {projectDetails.map((project) => <ProjectCard key={project.projectURL} info={project} />)}
+                </div>
             </div>
-        </div>
+        </motion.div>
+
     )
 }
 
