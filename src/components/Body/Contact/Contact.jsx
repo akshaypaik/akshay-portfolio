@@ -40,7 +40,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 2 * 0.1 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
             >
                 <h1 className='section-title'>Contact</h1>
                 <form ref={form} className='contact-form' onSubmit={(e) => handleContactFormSubmission(e)}>

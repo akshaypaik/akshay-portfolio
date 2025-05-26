@@ -10,10 +10,10 @@ const About = () => {
       <motion.div
         className="glass-card bg-translucent-30 p-8 rounded-xl border border-primary 
                             hover:bg-translucent-40 transition-all"
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1 * 0.1 }}
-        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 1 * 0.1 }}
+        viewport={{ once: false }}
       >
         <div className='about-container'>
           <img src={myAboutImg} alt='about-pic' />
